@@ -24,7 +24,7 @@ const Navbar = () => {
         </a>
         <div className="">
           <form onSubmit={handleOnSubmit} className="relative">
-            <input type="text" value={value} onChange={(e) => setValue(e.target.value)} name="" id="" className="bg-transparent h-8 w-[525px] p-5 rounded-md border-2" placeholder="What do you want to watch?" />
+            <input type="text" value={value} onChange={(e) => setValue(e.target.value)} name="" id="" className="bg-transparent h-8 w-[525px] p-5 rounded-md border-2 focus:outline-none" placeholder="What do you want to watch?" />
             <button className="absolute top-[14px] right-5">
               <Image src={Search} width={15} height={15} alt="search"/>
             </button>
