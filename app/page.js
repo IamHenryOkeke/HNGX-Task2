@@ -22,7 +22,7 @@ export default async function Home() {
         </div>
         <div className='grid md:grid-cols-4 gap-5'>
           {
-            data.slice(0,12)?.map((movie) => (
+            data.slice(0,12).map((movie) => (
               <div key={movie.id} data-testid = "movie-card" className='bg-gray-300 rounded-lg py-4 flex flex-col items-center'>
                 <img className='w-[90%] rounded-t-lg' data-testid = "movie-poster" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movie" />
                 <Link href={`/movie/${movie.id}`}>
