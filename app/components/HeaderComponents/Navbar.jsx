@@ -22,7 +22,7 @@ const Navbar = () => {
           <Image src={TV} width={30} height={30} alt="close menu"/>
           <span>MovieBox</span>
         </a>
-        <div className="">
+        <div className="hidden md:block">
           <form onSubmit={handleOnSubmit} className="relative">
             <input type="text" value={value} onChange={(e) => setValue(e.target.value)} name="" id="" className="bg-transparent h-8 w-[525px] p-5 rounded-md border-2 focus:outline-none" placeholder="What do you want to watch?" />
             <button className="absolute top-[14px] right-5">
