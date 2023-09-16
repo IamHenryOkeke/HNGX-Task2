@@ -1,6 +1,6 @@
 export async function getMovieData(id) {
   try {
-    const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.API_KEY}`)
+    const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3cec110d6cb7f690c339534ccbfe3696`)
     const data = await res.json()
     console.log(data)
     return data
@@ -12,7 +12,7 @@ export async function getMovieData(id) {
 
 export async function getData() {
   try {
-      const res = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.API_KEY}`, {
+      const res = await fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=3cec110d6cb7f690c339534ccbfe3696", {
       next:{
         revalidate: 0
       }
