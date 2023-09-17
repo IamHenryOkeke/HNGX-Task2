@@ -22,7 +22,7 @@ export default function Movies() {
                     }
                 })
                 const data = await res.json()
-                setData(data.results.slice(0,12))
+                setData(data.results.slice(0,10))
                 setLoading(false)
                 
             } catch (error) {
