@@ -54,8 +54,12 @@ export default function Movies() {
                       <Image src={Tomato} alt="" width={20} height={20}/>
                       <p>97%</p>
                   </div>
+                  <div className='flex gap-2'>
+                    <p>Release date: </p>
+                    <p data-testid = "movie-release-date">{movie.release_date}</p>
+                  </div>
                 </div>
-                <p data-testid = "movie-release-date">Release date: {movie.release_date}</p>
+                
               </div>
             ))
           }
