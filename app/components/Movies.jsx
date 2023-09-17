@@ -42,7 +42,7 @@ export default function Movies() {
             data.map((movie) => (
               <div key={movie.id} data-testid = "movie-card" className='bg-gray-300 rounded-lg py-4 flex flex-col items-center'>
                 <img className='w-[90%] rounded-t-lg' data-testid = "movie-poster" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movie" />
-                <Link href={`/movie/${movie.id}`}>
+                <Link href={`/movies/${movie.id}`}>
                   <p className='font-bold text-lg my-1 hover:text-blue-500' data-testid = "movie-title">{movie.title}</p>
                 </Link>
                 <div className="flex gap-20 my-1">
@@ -55,7 +55,7 @@ export default function Movies() {
                       <p>97%</p>
                   </div>
                 </div>
-                <p data-testid = "movie-release-date">{movie.release_date}</p>
+                <p data-testid = "movie-release-date">Release date: {movie.release_date}</p>
               </div>
             ))
           }
