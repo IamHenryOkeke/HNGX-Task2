@@ -55,7 +55,7 @@ export default function Movies() {
                       <p>97%</p>
                   </div>
                 </div>
-                <p data-testid = "movie-release-date">Release date: {movie.release_date}</p>
+                <p data-testid = "movie-release-date">{movie.release_date}</p>
               </div>
             ))
           }
